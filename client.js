@@ -73,7 +73,10 @@ function CheckScore(){
   
   if(myScore > highScore){
     highScore = myScore;
-  } 
+    return "new high score!" // or something like that
+  } else {
+  return "Not a new high score"
+  }
 };
 
 console.log(CheckScore());
